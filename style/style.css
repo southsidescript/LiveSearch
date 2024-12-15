@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Sedgwi');
 
 *{
     box-sizing: border-box;
@@ -14,35 +13,48 @@ h1{
 }
 
 body{
-    background-color: black;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url(../img/478083238_b54adbbb33_b.jpg) ;
+    background-size: cover;
+
 }
 
 .gallery img{
-    width: 250px;
+    width: 200px;
 }
 
 .gallery{
+    overflow: scroll;
     width: 80vw;
     height: 80vh;
-    border-top: 2px solid cyan;
-    background-color: rgba(0, 109, 109, 0.1);
+    border-top: 2px solid rgb(87, 123, 123);
+    background-color: rgba(85, 109, 109, 0.1);
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #search{
     width: 30vw;
     height: 40px;
-    border: 1px solid purple;
-    background: rgba(128, 0, 128, 0.5);
+    border: 1px solid rgb(146, 146, 146);
+    background: rgba(152, 152, 152, 0.789);
     outline: none;
     text-align: center;
     color: white;
     clip-path: polygon(
         0% 0%, 100% 0%, 100% 50%, 95% 100%, 0% 100%
       );
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
 }
